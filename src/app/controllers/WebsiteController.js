@@ -4,6 +4,7 @@ class WebsiteController {
 
     const websites = users.map(user => ({
       id: user.id,
+      name: user.name,
       website: user.website,
     }));
 
