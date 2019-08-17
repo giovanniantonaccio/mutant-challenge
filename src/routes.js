@@ -9,7 +9,9 @@ import SuiteController from './app/controllers/SuiteController';
 const routes = new Router();
 
 routes.get('/', (req, res) => {
-  return res.json({ msg: 'hello world' });
+  return res.json({
+    'how-to-use': 'https://github.com/giovanniantonaccio/mutant-challenge',
+  });
 });
 
 routes.use(usersMiddleware);

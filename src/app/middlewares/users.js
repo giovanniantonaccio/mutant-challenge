@@ -7,6 +7,6 @@ export default async (req, res, next) => {
     req.users = response.data;
     return next();
   } catch (err) {
-    return res.status(401).json({ error: 'API communication failed' });
+    return res.status(400).json({ error: 'API communication failed' });
   }
 };
