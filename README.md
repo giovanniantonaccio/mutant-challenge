@@ -19,19 +19,25 @@ Since this is a simple project and it does not require the use of databases to s
 Clone the repository
 
 ```bash
-git clone https://github.com/giovanniantonaccio/mutant-challenge.git
+git clone https://giovanniantonaccio@bitbucket.org/giovanniantonaccio/mutant-challenge.git
 
 ```
 
-Access project installation folder and run the following command to build a docker container and run it:
+Access project installation folder rename `.env.example` to `.env`.
+
+Run the tests:
+
+```bash
+  yarn test
+```
+
+Build a docker container and run the project:
 
 ```bash
 docker-compose up -d
 ```
 
 After these steps the server must be available on http://localhost:8080.
-
-Rename `.env.example` to `.env` and fill the informations.
 
 To run without docker, NodeJS must be installed. Open a terminal on the project folder and run the following commands
 
